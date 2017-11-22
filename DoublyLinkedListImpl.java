@@ -39,6 +39,18 @@ public class DoublyLinkedListImpl<E> {
      */
     public boolean isEmpty() { return size == 0; }
      
+      /**
+     * this method walks forward through the linked list
+     */
+    public void iterateForward(){
+         
+        System.out.println("iterating forward..");
+        Node tmp = head;
+        while(tmp != null){
+            System.out.println(tmp.element);
+            tmp = tmp.next;
+        }
+    }
     
     
     /**
